@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaft.org">
+<head>
+<meta charset="UTF-8" />
+<title th:text="${titulo}"></title>
+</head>
+<body>
+<h1 th:text="${titulo}"></h1>
+<ul>
+<li><a th:href="@{/params/string(texto='Hola emiliano')}">/params/string?texto=Hola Emiliano</a></li>
+<li><a th:href="@{/params/string(texto='Que tal prrros')}">/params/string?texto=que tal prrros</a></li>
+<li><a th:href="@{/params/mix-params(texto='Que tal prrros', numero =7)}">/params/string?texto=que tal prrros,numero = 7</a></li>
+<li><a th:href="@{/params/mix-params-request(texto='Como estas emiliano', numero =7)}">/params/string?texto=que tal prrros,numero = 7</a></li>
+</ul>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
